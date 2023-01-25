@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dvc-jupyter-bug"
+version = "0.1.0"
+description = ""
+authors = ["Eric Hulburd <ehulburd@rigetti.com>"]
+readme = "README.md"
+packages = [{include = "dvc_jupyter_bug"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+dvc = {version = "2.18.1", extras = ["s3", "ssh"]}
+jupyterlab = "^3.5.3"
+fsspec = "2022.11.0"
+tensorflow = "2.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
